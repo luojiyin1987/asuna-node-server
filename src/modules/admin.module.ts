@@ -33,6 +33,7 @@ import { SearchController } from './search/search.controller';
 import { TaskController } from './task/task.controller';
 import { TenantModule } from './tenant';
 import { TracingModule } from './tracing';
+import { UploadPagesModule } from './upload-pages/upload-pages.module';
 
 const logger = LoggerFactory.getLogger('AdminInternalModule');
 
@@ -63,6 +64,7 @@ const logger = LoggerFactory.getLogger('AdminInternalModule');
         return {};
       },
     }),
+    UploadPagesModule,
   ],
   controllers: [
     ApiController,
