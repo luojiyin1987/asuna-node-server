@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { UploadPagesService } from './upload-pages.service';
 
-@Module({})
+@Module({
+  providers: [UploadPagesService],
+})
 export class UploadPagesModule {}
